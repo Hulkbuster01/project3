@@ -34,7 +34,7 @@ header nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 20px;
+    gap: 40px;
 }
 
 header nav ul li a {
@@ -70,3 +70,73 @@ header section {
     font-weight: lighter;
     color: #999999;
 }
+
+/**
+* partie main du site
+*/
+.start {
+    text-align: center;
+    width: 25%;
+    margin: 60px auto; /* haut et bas; droite et gauche */
+}
+
+.start h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.start p {
+    font-weight:lighter ;
+    margin: 0;
+    color: #999999;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    text-align: right;
+    width: 60%;
+    margin: auto auto 60px auto;
+}
+.card .card-content h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.card .card-content {
+    width: 40%;
+}
+
+.card .card-content p {
+    margin: 15px 0 40px 0;
+    color: #999999;
+}
+
+.card .card-content a {
+    background-color: #a2c0be;
+    color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 50px;
+}
+
+.card .picture {
+    width: 50%;
+    box-shadow: 10px 10px 0 #a2c0be;
+}
+
+/* prends tous les enfants en position pair */
+.card:nth-child(even) {
+    text-align: left;
+}
+
+footer {
+    font-size: 0.8rem;
+    padding: 40px 0 40px 0;
+    background-color: grey;
+    color: white;
+    text-align: center;
