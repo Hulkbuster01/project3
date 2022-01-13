@@ -26,6 +26,9 @@ body {
     color: #ff9900;
 }
 
+header {
+    background-color: #f8f9fa;
+}
 
 header nav ul {
     display: flex;
@@ -37,4 +40,33 @@ header nav ul {
 header nav ul li a {
     color: #999999;
     text-decoration: none;
+}
+
+/**
+* Titre slogan et image du chien
+*/
+header section {
+    display: flex;
+    justify-content: space-between; /* centrage horizontal, seulement avec les flexbox */
+    width: 60%;
+    margin: auto;
+    align-items: center;/* centrage vertical, seulement avec les flexbox */
+}
+
+/* largeur de l'image contenue dans le header */
+.headerDog {
+   width: 35%; 
+}
+
+.headerTitle h1 {
+    font-size: 4rem;
+    margin: 0; /* suppression des marges auto. sur la balise heading */
+    font-weight: lighter;
+}
+
+.headerTitle p {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: lighter;
+    color: #999999;
 }
